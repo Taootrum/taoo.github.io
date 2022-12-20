@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Yaml</title><url>/study/yaml/</url><categories><category>Study</category></categories><tags><tag>Yaml</tag><tag>Study</tag></tags><content type="html"><![CDATA[Yaml 语法学习记录
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Armv8</title><url>/arm/armv8/</url><categories><category>arm</category></categories><tags><tag>arm</tag><tag>record</tag></tags><content type="html">armv8相关知识
+ARMv8 带你了解ARMv8-AArch64简介(超详细) Cortex-A78 如何判断当前是处于Aarch64 还是Aarch32状态？ ARMv8的两种执行状态： AArch64/AArch32 what is the current execution mode/exception level, etc? 目前看到的是：没有直接寄存器查询当前是Aarch64 还是Aarch32,而是在编译阶段就确定得.
+编译阶段即指定使用的是Aarch64还是Aarch32指令集 目前使用的交叉编译器aarch64-linux-gnu-即编译出Aarch64指令集得二进制程序
+获取当前处理器状态 对于Aarch64, 可以从Pstate寄存器获取一些状态
+对于Aarch32，和armv7架构一样，从CPSR寄存器获取</content></entry><entry><title>Yaml</title><url>/study/yaml/</url><categories><category>Study</category></categories><tags><tag>Yaml</tag><tag>Study</tag></tags><content type="html"><![CDATA[Yaml 语法学习记录
 Yaml语法学习 记录Yaml的语法，为工具开发做准备
 基本介绍 YAML:&ldquo;Yet Another Markup Language&rdquo;(仍是一种标记语言),YAML 的语法和其他高级语言类似，并且可以简单表达清单、散列表，标量等数据形态。
 ==使用空白符号缩进和大量依赖外观的特色==，特别适合用来表达或编辑数据结构、各种配置文件、倾印调试内容、文件大纲,YAML 的配置文件后缀为 `.yml yaml文件是一种配置文件类型，相比较ini，conf配置文件来说，更加的简洁，操作也更加简单，同时可以存放不同类型的数据，不会改变原有数据类型，所有的数据类型在读取时都会原样输出 基本语法 大小写敏感 使用缩进表示层级关系 缩进不允许使用tab，只允许空格 缩进的空格数不重要，只要相同层级的元素左对齐即可 &lsquo;#&lsquo;表示注释 数据类型 YAML 支持以下几种数据类型：
@@ -15,7 +19,7 @@ Next 域名购买备案部署上线
 icons 问题记录 git 提示报错 这是因为文件/目录存在不同的磁盘上，会导致这个问题
 解决方案: Ref env GIT_DISCOVERY_ACROSS_FILESYSTEM=true export GIT_DISCOVERY_ACROSS_FILESYSTEM hugo Markdown引用本地图片 Hugo如何在markdown里引用本地图片 本地Vscode如何也能浏览到？ 目前能想到的是：复制一份到static/imgs, 另外引用图片语法写两次，以此来适配
 vercel国内被墙导致Waline评论系统无法工作问题 taoo-blog 参考链接 关于waline国内无法使用的解决方案 （vercel.app国内无法使用问题） 绑定域名 Waline系统的评论如何管理？ &amp;lt;serverURL&amp;gt;/ui 进入后台对评论进行管理 https://comment.taoo.tech/ui 如何增加聊天功能 在网页申请创建聊天室：https://gitter.im/,添加到config.yaml即可
-自动化部署博客到Github Pages Hugo使用Github Action自动部署博客到Github Pages 搭建后，总访客数以及总浏览数有几千万问题 目前发现部署在公网上，就不会有这个问题，部署在本地浏览器上，会有这个问题</content></entry><entry><title>关于 Taoo 博客</title><url>/about.html</url><categories/><tags/><content type="html">Taoo博客旨在记录工作以及学习中所遇到以及总结的问题，以便于未来回顾和反思.</content></entry><entry><title>Markdown 语法支持</title><url>/post/markdown-syntax/</url><categories/><tags/><content type="html"><![CDATA[仅以此篇文章来测试下在 NexT 主题中在通过 Hugo 引擎来建站时，是否支持 Markdown 文件内容中所写的各种语法，并展示下实际的效果。
+自动化部署博客到Github Pages Hugo使用Github Action自动部署博客到Github Pages 搭建后，总访客数以及总浏览数有几千万问题 目前发现部署在公网上，就不会有这个问题，部署在本地浏览器上，会有这个问题 具体可见Github上我的提问：作者解释了这个问题，以及其他问题得解决： 网站与文章的浏览人数及次数显示不正确问题 #73</content></entry><entry><title>关于 Taoo 博客</title><url>/about.html</url><categories/><tags/><content type="html">Taoo博客旨在记录工作以及学习中所遇到以及总结的问题，以便于未来回顾和反思.</content></entry><entry><title>Markdown 语法支持</title><url>/post/markdown-syntax/</url><categories/><tags/><content type="html"><![CDATA[仅以此篇文章来测试下在 NexT 主题中在通过 Hugo 引擎来建站时，是否支持 Markdown 文件内容中所写的各种语法，并展示下实际的效果。
 标题样式 让我们从所有可能的标题开始，在 HTML 中 &lt;h1&gt;-&lt;h6&gt;元素分别表示六个不同级别的标题样式，其中 &lt;h1&gt; 为最大标题，&lt;h6&gt;为最小标题，效果如下：
 标题 1 标题 2 标题 3 标题 4 标题 5 标题 6 段落格式 根据 W3C 定义的 HTML5 规范 ，HTML 文档由元素和文本组成。每个元素的组成都由一个 开始标记 表示，例如： &lt;body&gt; ，和 结束标记 表示，例如： &lt;/body&gt; 。（某些开始标记和结束标记在某些情况下可以省略，并由其他标记暗示。） 元素可以具有属性，这些属性控制元素的工作方式。例如：超链接是使用 a 元素及其 href 属性形成的。
 Markdown 语法 ![图像说明](图像地址) HTML IMG 标签 &lt;img src=&#34;图像地址&#34; width=&#34;宽度&#34; height=&#34;高度&#34; /&gt; SVG 格式 &lt;svg&gt;xxxxxx&lt;/svg&gt; 列表类型 有序列表 第一个元素 第二个元素 第三个元素 无序列表 列表元素 另一个元素 和其它元素 嵌套列表 借助 HTML 的 ul 元素来实现。
