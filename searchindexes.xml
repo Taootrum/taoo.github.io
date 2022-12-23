@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Shell</title><url>/shell/shell/</url><categories><category/></categories><tags><tag/><tag/></tags><content type="html"><![CDATA[shell相关知识记录
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Shell</title><url>/shell/shell/</url><categories><category>shell</category></categories><tags><tag>shell</tag><tag>record</tag></tags><content type="html"><![CDATA[shell相关知识记录
 Shell 显示文件某一行或几行内容 linux中怎么用shell显示文件某一行或几行内容 sed命令
 sed -n &#39;xp&#39; filename # 显示文件X行命令 sed -n &#39;x,yp&#39; filename #显示文件X行到Y行的内容 tail显示监控文件输出 tail -f ]]></content></entry><entry><title>Git</title><url>/git/git/</url><categories><category>git</category></categories><tags><tag>git</tag><tag>record</tag></tags><content type="html"><![CDATA[git相关知识记录
 GIT记录 git添加commit msg 通过命令添加
