@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Git</title><url>/git/git/</url><categories><category>git</category></categories><tags><tag>git</tag><tag>record</tag></tags><content type="html"><![CDATA[git相关知识记录
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Shell</title><url>/shell/shell/</url><categories><category/></categories><tags><tag/><tag/></tags><content type="html"><![CDATA[shell相关知识记录
+Shell 显示文件某一行或几行内容 linux中怎么用shell显示文件某一行或几行内容 sed命令
+sed -n &#39;xp&#39; filename # 显示文件X行命令 sed -n &#39;x,yp&#39; filename #显示文件X行到Y行的内容 tail显示监控文件输出 tail -f ]]></content></entry><entry><title>Git</title><url>/git/git/</url><categories><category>git</category></categories><tags><tag>git</tag><tag>record</tag></tags><content type="html"><![CDATA[git相关知识记录
 GIT记录 git添加commit msg 通过命令添加
 git config commit.template &lt;msg_file&gt; git 添加commit msg 检查 通过hook来实现，在.git/hooks目录下有很多文件，其中commit-smg.sample文件实现对commit msg检查，具体可看该文件的说明
 git hooks怎么提交到库中提供给所有人使用 git hooks本地脚本如何push到远程 目前使用的是软链接+环境安装脚本方式来实现
