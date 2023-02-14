@@ -10,7 +10,8 @@ GIT记录 git添加commit msg 通过命令添加
 git config commit.template &lt;msg_file&gt; git 添加commit msg 检查 通过hook来实现，在.git/hooks目录下有很多文件，其中commit-smg.sample文件实现对commit msg检查，具体可看该文件的说明
 git hooks怎么提交到库中提供给所有人使用 git hooks本地脚本如何push到远程 目前使用的是软链接+环境安装脚本方式来实现
 将.git/hooks软链接到库中的目录达到目的 git commit msg检查失败后，重新git commit如何继续之前的内容 How can I recover the commit message when the git commit-msg hook fails? 从上面的链接上使用了alias来实现：
-git config alias.recommit &#39;commit --edit --file=.git/COMMIT_EDITMSG&#39; ]]></content></entry><entry><title>Armv8</title><url>/arm/armv8/</url><categories><category>arm</category></categories><tags><tag>arm</tag><tag>record</tag></tags><content type="html">armv8相关知识
+git config alias.recommit &#39;commit --edit --file=.git/COMMIT_EDITMSG&#39; Git subtree的使用 git 的 subtree 是一种复用源代码的方式，可以让多个仓库引用某个仓库的代码，也可以将仓库中的某个目录拆分成一个子仓库以供其他仓库使用
+subtree 添加 git subtree add --prefix=&lt;dir&gt; &lt;url&gt; &lt;branch&gt; ]]></content></entry><entry><title>Armv8</title><url>/arm/armv8/</url><categories><category>arm</category></categories><tags><tag>arm</tag><tag>record</tag></tags><content type="html">armv8相关知识
 ARMv8 带你了解ARMv8-AArch64简介(超详细) Cortex-A78 如何判断当前是处于Aarch64 还是Aarch32状态？ ARMv8的两种执行状态： AArch64/AArch32 what is the current execution mode/exception level, etc? 目前看到的是：没有直接寄存器查询当前是Aarch64 还是Aarch32,而是在编译阶段就确定得.
 编译阶段即指定使用的是Aarch64还是Aarch32指令集 目前使用的交叉编译器aarch64-linux-gnu-即编译出Aarch64指令集得二进制程序
 获取当前处理器状态 对于Aarch64, 可以从Pstate寄存器获取一些状态
